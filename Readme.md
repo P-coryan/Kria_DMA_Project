@@ -59,7 +59,7 @@ The latest release includes **pre-compiled binaries** to get the DMA Loopback ru
 2. Flash the image onto a microSD card (16GB+ recommended) using:
    - **BalenaEtcher**, or  
    - the `dd` command.
-3. Insert the SD card into the KV260 and boot the board.
+3. Insert the SD card into the KV260 and boot the board. the Login is `root`
 
     If you experience issues with the automatic boot process, refer to  
 [Section 6: Flashing the SD Card from WSL2](./yocto-build/README.md#-booting-the-kria-from-sd-card-manual-recovery--permanent-fix)
