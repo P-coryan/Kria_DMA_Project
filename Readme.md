@@ -29,6 +29,52 @@ This repository establishes a **reliable HW + OS + Driver pipeline** that future
 
 ---
 
+## 🚀 Latest Release & Quick Start
+
+The latest release includes **pre-compiled binaries** to get the DMA Loopback running on your **Kria KV260** immediately.
+
+### Included Assets
+- **`.wic`** – Complete SD card image containing the OS and runtime environment.
+- **`.bin` & `.dtbo`** – FPGA bitstream and upper-layer Device Tree Overlay for hardware loading.
+- **`shell.json`** – Configuration file for the Kria `xmutil` tool.
+- **`.xsa`** – Hardware handoff file for Vitis or custom software development.
+
+---
+
+## How to Use
+
+### 1️⃣ Flash the SD Card
+1. Download the **`.wic`** file from the **Releases** section.
+2. Flash the image onto a microSD card (16GB+ recommended) using:
+   - **BalenaEtcher**, or  
+   - the `dd` command.
+3. Insert the SD card into the KV260 and boot the board.
+
+---
+
+### 2️⃣ Deploy the Hardware Overlay
+If you are already running an OS and only want to load the hardware design:
+
+1. Transfer the following files to the board (via SCP or USB; see the `software/` folder for detailed instructions on SSH and SCP access):
+   - `.bin`
+   - `.dtbo`
+   - `shell.json`
+
+2. Create a new firmware directory:
+   ```bash
+   sudo mkdir /lib/firmware/xilinx/kria-dma
+   sudo mv your_files.* /lib/firmware/xilinx/kria-dma/
+    ```
+3. Load the design using `xmutil`:
+    ```bash
+    sudo xmutil unloadapp
+    sudo xmutil loadapp kria_dma
+    ```
+### 3️⃣ Run the Test
+
+Once the hardware is loaded, you can use the provided  C applications (software folder) to verify the DMA loopback functionality.
+
+
 ## 🛠️ Environment & Prerequisites
 
 This project uses a **hybrid workflow**:
