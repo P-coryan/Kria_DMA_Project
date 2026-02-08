@@ -136,7 +136,7 @@ The project is organized into **clear functional domains**:
 
 | Directory | Description |
 |---------|-------------|
-| `yocto-build/` | 🐧 **Start here.** Build a custom Linux OS from source using Yocto. Includes the custom layer `meta-kria-custom`. |
+| `yocto-build/` | 🐧 **Start here.** Build a custom Linux OS from source using Yocto. Includes the custom layer `meta-patrik`. |
 | `hardware/` | ⚙️ TCL scripts to regenerate the Vivado project with **AXI DMA (64-bit)**. |
 | `os-integration/` | 🌲 Scripts to generate the **Device Tree Overlay (`.dtbo`)** and `shell.json` for `xmutil`. |
 | `software/` | 💻 Userspace C application to benchmark and validate DMA transfers. |
