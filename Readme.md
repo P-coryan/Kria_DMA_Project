@@ -68,7 +68,7 @@ If you are already running an OS and only want to load the hardware design:
 3. Load the design using `xmutil`:
     ```bash
     sudo xmutil unloadapp
-    sudo xmutil loadapp kria_dma
+    sudo xmutil loadapp kria-dma
     ```
 ### 3️⃣ Run the Test
 
