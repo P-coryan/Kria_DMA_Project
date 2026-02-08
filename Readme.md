@@ -143,6 +143,10 @@ With the **Data Highway (DMA)** and **Custom OS (Yocto)** fully stable, future w
 
 ---
 
+## License
+
+This project is licensed under the MIT License – see the LICENSE file for details.
+
 ## 👤 Author
 
 **Patricio Carrasco O'Ryan**  
