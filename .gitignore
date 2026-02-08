@@ -1,0 +1,41 @@
+# --- Vivado Ignores (Vital para no ensuciar) ---
+*.jou
+*.log
+*.dcp
+*.xpr
+*.bit
+*.bin
+*.xsa
+*.hdf
+.Xil/
+.cache/
+.ip_user_files/
+*.str
+*.os
+*.bgn
+*.rpx
+*.rpt
+/proj/
+/*.runs/
+/*.sim/
+/*.srcs/
+/*.gen/
+NA/
+
+# --- Vitis / SDK Ignores ---
+.metadata/
+.sdk/
+*.launch
+hw_platform/
+
+# --- Linux / Software Ignores ---
+*.o
+*.out
+dma_test_v2       # El ejecutable compilado (binario)
+__pycache__/
+
+# --- OS / Yocto Artifacts ---
+*.dtbo            # Los overlays compilados no se suben
+*.wic
+*.wic.bz2
+deploy/           # Carpeta opcional para guardar binarios locales

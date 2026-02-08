@@ -1,0 +1,13 @@
+[Match]
+Name=eth0
+
+[Network]
+# Tu IP Fija
+Address=172.29.13.106/24
+
+# La puerta de enlace (tu router)
+Gateway=172.29.13.1
+
+# DNS (Google y Cloudflare)
+DNS=8.8.8.8
+DNS=1.1.1.1
